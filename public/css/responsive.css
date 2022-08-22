@@ -1,0 +1,200 @@
+@media screen and (max-width: 1360px)  {
+    #property-images-slider .gallery-thumbs .swiper-slide iframe {
+        max-height: 100px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #property-images-slider .gallery-thumbs .swiper-slide {
+        height: 100%;
+    }
+    .table-grid .card-body .table {
+        /* min-width: 1280px; */
+    }
+    .table-grid .card-body .table tr th:last-child {
+        width: 175px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .table-grid .card-body .table td:last-child {
+        text-align: center;
+    }
+    .table-grid .card-body .table td:last-child .btn {
+        margin: 5px auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    .c-4 {
+        column-count: 1;
+    }
+    .card {
+        width: 100%;
+        overflow: hidden;
+    }
+    table.table-bordered thead {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    table.table-bordered thead tr:first-child {
+        display: flex;
+        justify-content: center;
+    }
+    table.table-bordered thead tr:nth-child(2) td:nth-child(3) {
+        width: 100%;
+    }
+    table.table-bordered thead tr th:nth-child(1),
+    table.table-bordered thead tr th:nth-child(2),
+    table.table-bordered thead tr th:nth-child(5) {
+        display: none;
+    }
+    table.table-bordered thead tr:nth-child(2) td {
+        display: block;
+        max-width: 100%;
+    }
+    table.table-bordered thead tr:nth-child(2) td input {
+        width: 100%;
+    }
+    table.table-bordered:first-child tr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    table.table-bordered tbody {
+        overflow: hidden;
+    }
+    table.table-bordered tbody:first-child {
+        width:100vw;
+        overflow-X: hidden;
+    }
+    table.table-bordered tbody tr {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    table.table-bordered tbody tr td .row {
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: center;
+    }
+    table.table-bordered tbody tr td .row>* {
+        width: auto;
+    }
+    .calendar-input {
+        margin-top: 20px;
+    }
+    .hint-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .calendar-full .period-input {
+        max-width: 100vw;
+    }
+    .scroll-div {
+        overflow-x: auto;
+        width: calc(100% - 120px);
+    }
+    .fixed-rooms {
+        width: 140px;
+        font-size: .8rem;
+    }
+    .scroll-div > div {
+        min-width: 600px;
+        font-size: .8rem;
+    }
+    .open-calendar {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 20px;
+    }
+    .period-range {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .period-range>* {
+        width: 50%;
+    }
+    tfoot,
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    tfoot tr td div {
+        max-width: 320px;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    .scroll-div > div {
+        font-size: .7rem;
+    }
+    .scroll-div {
+        overflow-x: auto;
+        line-height: 2;
+        padding-bottom: 10px;
+        gap: 0 !important;
+    }
+    .calendarDaysNum {
+        width: calc(100% - 100px);
+    }
+    .fixed-rooms {
+        font-size: .7rem;
+    }
+    .rooms {
+        line-height: 2;
+        width: 100px;
+    }
+    .col-10.px-0.scroll-div {
+        max-width: 75%!important;
+        margin-left: 40px;
+    }
+    .form-control.datepicker {
+        text-align: center;
+    }
+    #app .form-control.datepicker {
+        text-align: left;
+    }
+    .filter-location-dates {
+        padding-left: 0;
+    }
+    #home-search-form form > div > div {
+        padding-left: .5rem!important;
+        padding-right: .5rem!important;
+    }
+    .home-gallery-wrapper {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .col-10.px-0.scroll-div {
+        max-width: 70%!important;
+    }
+    .calendar-full .period-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .calendar-full .weekDaysName {
+        flex-direction: row;
+    }
+    #tb-main-template table {
+        font-size: .85rem;
+    }
+    #tb-main-content .tab-pane {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .col-10.px-0.scroll-div {
+        max-width: 60%!important;
+        margin-left: 50px;
+    }
+    #prevPeriod, #nextPeriod {
+        height: 3em;
+    }
+
+}

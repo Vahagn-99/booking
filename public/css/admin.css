@@ -1,0 +1,110 @@
+img {
+    max-width: 100%;
+}
+.content-header h1 {
+    font-size: 1.6rem;
+}
+.prop-table table tr td:last-child .row {
+    display: block;
+}
+.prop-table table tr td:last-child .row > div {
+    display: inline-block;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 0;
+    margin-left: 7px;
+}
+.hint-box span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+.half {
+    position: relative;
+    overflow: hidden;
+}
+.half::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.half-in::before {
+    left: 0;
+    transform: rotate(-45deg) translateY(-100%);
+}
+.half-out::before {
+    right: 0;
+    transform: rotate(135deg) translateY(-100%);
+}
+div.date-empty-wrapper {
+    background-color: #dadadb;
+}
+.login-box, .register-box {
+    width: 500px;
+    max-width: 90%;
+}
+.table-grid .card-body {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.account-show-key,
+.account-hide-key {
+    cursor: pointer;
+}
+.items-end {
+    align-items: flex-end;
+}
+.c-4 {
+    column-count: 4;
+}
+.over-block {
+    max-height: 150px;
+    overflow-y: auto;
+}
+.over-block-large {
+    max-height: 300px;
+}
+.photo-block {
+    position: relative;
+    cursor: pointer;
+}
+.photo-block .btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.modal {
+    top: 60px;
+}
+.main-header {
+    z-index: 1042;
+}
+.control-sidebar {
+    position: fixed;
+    height: 100vh;
+    overflow-x: auto;
+    top: 0;
+    padding-bottom: 60px;
+    z-index: 1041;
+    width: 370px;
+}
+.control-sidebar::before {
+    display: none;
+}
+.calendar-table th, .calendar-table td {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+}
+.calendar-table td {
+    border: 1px solid #dee2e6;
+}

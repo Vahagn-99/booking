@@ -1,0 +1,46 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: admin2
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: bookingfwi
+    container_name: bookingfwi-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - bookingfwi
+  db:
+    image: mariadb:latest
+    container_name: bookingfwi_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      MARIADB_ROOT_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker-compose/mariadb:/docker-entrypoint-initdb.d
+    networks:
+      - bookingfwi
+  nginx:
+    image: nginx:1.17-alpine
+    container_name: bookingfwi-nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - bookingfwi
+networks:
+  bookingfwi:
+    driver: bridge
